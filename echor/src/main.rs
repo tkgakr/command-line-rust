@@ -20,5 +20,14 @@ fn main() {
         )
         .get_matches();
 
-    println!("{:#?}", matches);
+    // `text` 引数は必須なので、None になることはありえない
+    let text = matches.values_of_lossy("text").unwrap();
+    // -n は指定されたかされてないかのブール
+    let omit_newline = matches.is_present("omit_newline");
+
+    let mut ending = "\n";
+    if omit_newline {
+        ending = "";
+    }
+    print!("{}{}", text.join(" "), ending);
 }
