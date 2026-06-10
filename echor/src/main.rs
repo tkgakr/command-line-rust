@@ -25,9 +25,7 @@ fn main() {
     // -n は指定されたかされてないかのブール
     let omit_newline = matches.is_present("omit_newline");
 
-    let mut ending = "\n";
-    if omit_newline {
-        ending = "";
-    }
+    let ending = if omit_newline { "" } else { "\n" };
+
     print!("{}{}", text.join(" "), ending);
 }
