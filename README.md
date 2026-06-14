@@ -7,12 +7,14 @@
 ## 参考
 
 - 書籍: [Rustの練習帳 ―コマンドラインツールの作成を通してRustを学ぶ](https://www.oreilly.co.jp/books/9784814400584/)
-- 原著サンプルコード: [kyclark/command-line-rust](https://github.com/kyclark/command-line-rust)
+- 原著サンプルコード: [kyclark/command-line-rust](https://github.com/kyclark/command-line-rust)（clap 2系に対応する [`clap_v2` ブランチ](https://github.com/kyclark/command-line-rust/tree/clap_v2) を参照しています）
 
 ## 環境
 
 - Rust（edition 2024）
 - Cargo
+
+> **注記**: 本リポジトリでは clap のバージョンとして **2系（2.33）** を使用しています。これは日本語版書籍の記述に合わせたものであり、最新の clap 4系とは API（コマンドの構築方法など）が異なります。
 
 ## ディレクトリ構成
 
